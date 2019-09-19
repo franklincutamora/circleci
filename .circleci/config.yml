@@ -10,8 +10,8 @@ jobs:
             - run: npm install jshint
             - run: npm install csslint
             - run: ./node_modules/.bin/htmlhint
-            - run: ./node_modules/.bin/jshint "/"
-            - run: ./node_modules/.bin/csslint "/"
+            - run: ./node_modules/.bin/jshint /
+            - run: ./node_modules/.bin/csslint /
             - run: mkdir -p my_workspace
             - run: echo "Trying out workspaces" > my_workspace/echo-output
             - persist_to_workspace:
