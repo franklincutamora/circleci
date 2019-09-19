@@ -1,6 +1,6 @@
 version: 2
 jobs:
-    build:
+    build and test:
         docker:
             - image: circleci/node:10.16.0
         steps:
@@ -9,11 +9,6 @@ jobs:
             - run: npm install htmlhint
             - run: npm install jslint
             - run: npm install csslint
-    test:
-        docker:
-            - image: circleci/node:10.16.0
-        steps:
-            - checkout
             - run: ./node_modules/.bin/htmlhint
             - run: ./node_modules/.bin/jslint
             - run: ./node_modules/.bin/csslint
@@ -22,10 +17,9 @@ jobs:
             - persist_to_workspace:
                 root: my_workspace
                 paths:
-                        - echo-output
+                    - echo-output
 workflows:
     version: 2
     running_job:
         jobs:
-        - build
-        - test
+        - build and test
