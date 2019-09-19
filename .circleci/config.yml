@@ -7,11 +7,15 @@ jobs:
             - checkout
             - run: npm install
             - run: npm install htmlhint
-            - run: npm install jshint
-            - run: npm install csshint
+            - run: npm install jslint
+            - run: npm install csslint
+    test:
+        docker:
+            - image: circleci/node:10.16.0
+            steps:
             - run: ./node_modules/htmlhint/bin/htmlhint
-            - run: ./node_modules/jshint/bin/jshint
-            - run: ./node_modules/csshint/bin/csshint-cli
+            - run: ./node_modules/.bin/jslint
+            - run: ./node_modules/.bin/csslint
             - run: mkdir -p my_workspace
             - run: echo "Trying out workspaces" > my_workspace/echo-output
             - persist_to_workspace:
@@ -23,3 +27,4 @@ workflows:
     running_job:
         jobs:
         - build
+        - test
