@@ -12,7 +12,7 @@ jobs:
     test:
         docker:
             - image: circleci/node:10.16.0
-            steps:
+        steps:
             - run: ./node_modules/htmlhint/bin/htmlhint
             - run: ./node_modules/.bin/jslint
             - run: ./node_modules/.bin/csslint
