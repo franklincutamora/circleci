@@ -1,0 +1,25 @@
+{
+  "name": "circleci",
+  "version": "1.0.0",
+  "description": "Circle CI",
+  "main": "bundle.js",
+  "dependencies": {
+    "csslint": "^1.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franklincutamora/circleci.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franklincutamora/circleci/issues"
+  },
+  "homepage": "https://github.com/franklincutamora/circleci#readme"
+}
