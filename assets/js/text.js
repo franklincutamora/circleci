@@ -4,6 +4,6 @@
 
 // Uncomment this block below to test correct javascript.
 
-(anoon) => {
+(function(){
     alert('test');
-}
+})($);

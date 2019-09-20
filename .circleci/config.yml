@@ -7,10 +7,10 @@ jobs:
             - checkout
             - run: npm install
             - run: npm install htmlhint
-            - run: npm install jslint
+            - run: npm install eslint
             - run: npm install csslint
             - run: ./node_modules/.bin/htmlhint
-            - run: ./node_modules/.bin/jslint assets/js/**.js
+            - run: ./node_modules/.bin/eslint assets/js/**.js
             - run: ./node_modules/.bin/csslint assets/css/**.css
             - run: mkdir -p my_workspace
             - run: echo "Trying out workspaces" > my_workspace/echo-output
