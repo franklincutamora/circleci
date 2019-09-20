@@ -1,6 +1,8 @@
 // Uncomment this block below to test erroneous javascript.
 
-$(document).leopard();
+(function(){
+    alter('test');
+})();
 
 // Uncomment this block below to test correct javascript.
 
