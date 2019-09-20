@@ -10,6 +10,7 @@ jobs:
             - run: npm install jslint
             - run: npm install csslint
             - run: ./node_modules/.bin/htmlhint
+            - run: ./node_modules/.bin/jslint **.js
             - run: ./node_modules/.bin/jslint assets/js/**.js
             - run: ./node_modules/.bin/csslint assets/css/**.css
             - run: mkdir -p my_workspace
