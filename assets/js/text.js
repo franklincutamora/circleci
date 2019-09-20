@@ -4,6 +4,7 @@
 
 // Uncomment this block below to test correct javascript.
 
-(function() {
+'use strict';
+() => {
     alert('test');
-})();
+}
