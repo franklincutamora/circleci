@@ -4,7 +4,6 @@
 
 // Uncomment this block below to test correct javascript.
 
-'use strict';
-() => {
+(anoon) => {
     alert('test');
 }
