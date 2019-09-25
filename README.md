@@ -2,6 +2,7 @@
 ==============================
 
 .eslintrc.js
+```
     module.exports = {
         "env": {
             "browser": true,
@@ -19,10 +20,11 @@
         "rules": {
         }
     };
-
+```
 ==============================
 
 .stylelintrc
+```
     {
         "rules": {
             "at-rule-no-unknown": true,
@@ -40,8 +42,10 @@
             "unit-no-unknown": true,
         }
     }
-
+```
 ==============================
+```
 .gitattributes
 .gitignore
 .htaccess
+```
