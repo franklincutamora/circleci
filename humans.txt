@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon 
+
+# THANKS
+
+    FranklinCutamota -- SeniorWebDeveloper -- https://www.linkedin.com/in/franklin-cutamora/
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    ES6, jQuery, Modernizr, Normalize.css
